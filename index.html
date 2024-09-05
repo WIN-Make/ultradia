@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Install Ultradia</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffff; /* White background */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+        .loading-container {
+            text-align: center;
+            color: #000000; /* Black text for contrast on white background */
+        }
+        .apple-logo {
+            width: 120px; /* Increased width */
+            height: 120px; /* Increased height */
+            margin-bottom: 30px;
+        }
+        .progress-bar {
+            width: 250px;
+            height: 6px;
+            background-color: rgba(0, 0, 0, 0.2); /* Light black progress bar background */
+            border-radius: 3px;
+            overflow: hidden;
+            margin: 0 auto 20px;
+        }
+        .progress {
+            width: 50%;
+            height: 100%;
+            background-color: #000000; /* Black progress bar */
+            border-radius: 3px 0 0 3px;
+            animation: load 20s infinite ease-in-out;
+        }
+        @keyframes load {
+            0% { width: 0%; }
+            100% { width: 100%; }
+        }
+        .status-text {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="loading-container">
+        <img src="https://app.giz.ai/api/tempFiles/nyc01+temp_aV1LjaJt9l-cqALXlXSUF.webp" alt="Among Us Logo" class="apple-logo">
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+        <div class="status-text">Installing Ultradia....</div>
+    </div>
+</body>
+</html>
